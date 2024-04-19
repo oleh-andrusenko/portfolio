@@ -25,7 +25,7 @@ function MobileSidebar({ isShown, hideSidebar }) {
               onClick={hideSidebar}
               className='text-slate-500 hover:text-blue-700  px-2 font-semibold dark:text-white'
             >
-              About
+              About me
             </a>
           </li>
           <li>
