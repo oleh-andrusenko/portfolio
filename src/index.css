@@ -23,7 +23,7 @@ html {
 }
 
 .sidebar {
-  background: rgba(255, 255, 255, 0.9);
+  @apply bg-white/90 dark:bg-slate-900/95;
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0;

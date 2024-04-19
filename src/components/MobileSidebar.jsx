@@ -12,7 +12,7 @@ function MobileSidebar({ isShown, hideSidebar }) {
         >
           <li>
             <a
-              className='text-4xl text-slate-500 hover:text-blue-700 hover:ease-in-out dark:text-white'
+              className='text-4xldark:text-white  text-slate-500 hover:text-blue-700 hover:ease-in-out dark:text-white'
               href='#'
               onClick={hideSidebar}
             >
