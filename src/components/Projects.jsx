@@ -1,4 +1,3 @@
-import React from "react"
 import BlockTitle from "./BlockTitle"
 import ProjectItem from "./ProjectItem"
 

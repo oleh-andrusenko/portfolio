@@ -2,6 +2,7 @@ import { useState } from "react"
 
 function ThemeSwitcher() {
   const [theme, setTheme] = useState("light")
+  
   function handleThemeChange() {
     if (theme === "light") {
       document.documentElement.classList.add("dark")

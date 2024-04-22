@@ -1,5 +1,3 @@
-import React from "react"
-
 function ProjectItem({ icon, title, description, link, git }) {
   return (
     <div className='  bg-slate-50 dark:bg-slate-700 lg:h-[300px] overflow-hidden flex items-center justify-between rounded-xl shadow-xl'>

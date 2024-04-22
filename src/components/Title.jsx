@@ -1,6 +1,5 @@
-import React from "react"
-import photo from "../assets/me.jpg"
 import SocialLinks from "./SocialLinks"
+
 function Title() {
   return (
     <div className='mx-auto flex flex-col-reverse lg:flex-row items-center justify-between w-full lg:max-w-7xl lg:py-24 lg:px-20 px-4 py-10 '>

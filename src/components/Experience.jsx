@@ -1,6 +1,6 @@
-import React from "react"
 import BlockTitle from "./BlockTitle"
 import visage from "../assets/visage.png"
+
 function Experience() {
   return (
     <div className='lg:mx-auto lg:max-w-7xl bg-slate-50 lg:py-24 lg:px-20 px-4 py-10 dark:bg-slate-800' id='experience'>
@@ -16,15 +16,13 @@ function Experience() {
           <h4 className='text-xl font-bold text-black my-4 text-center dark:text-white'>
             System administrator
           </h4>
-          <ul className='list-disc ml-6 lg:ml-8 text-slate-600 text-sm lg:text-md dark:text-white'>
-           
+          <ul className='list-disc ml-6 lg:ml-8 text-slate-600 text-sm lg:text-md dark:text-white'>  
             <li>Managed company website development and maintenance.</li>
             <li>
               Performed installation and configuration of OS and application
               software.
             </li>
             <li>Contributed to local network design and installation.</li>
-          
           </ul>
         </div>
         <div className='w-full p-2 lg:h-full lg:w-1/4 lg:p-4 text-slate-600 lg:text-center dark:text-white my-2'>

@@ -1,5 +1,3 @@
-import React from "react"
-
 function SocialLinks() {
   return (
     <div className='w-20 pt-8 flex gap-2 items-center justify-between '>

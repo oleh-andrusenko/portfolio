@@ -1,4 +1,3 @@
-import React from "react"
 import BlockTitle from "./BlockTitle"
 import SocialLinks from "./SocialLinks"
 
@@ -15,6 +14,7 @@ function Contacts() {
       btn.className = btnClasess
     }, 1500)
   }
+
   return (
     <div
       className='px-4 py-10 dark:bg-slate-800 lg:mx-auto lg:max-w-7xl lg:h-74 lg:py-24 lg:px-24 flex flex-col items-center justify-center bg-slate-50'

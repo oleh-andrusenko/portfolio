@@ -1,5 +1,3 @@
-import React from "react"
-
 function Footer() {
   return (
     <div className='lg:mx-auto lg:max-w-7xl flex items-center justify-center lg:h-32 dark:text-white'>

@@ -1,4 +1,3 @@
-import React from "react"
 import BlockTitle from "./BlockTitle"
 
 function About() {
@@ -38,7 +37,6 @@ function About() {
           <p>
             <ul className='list-disc ml-8'>
               <li>Master's degree in Computer Engineering</li>
-
               <li>Avid learner</li>
               <li>Always open to new</li>
             </ul>
