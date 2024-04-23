@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { motion } from "framer-motion"
 import MobileSidebar from "./MobileSidebar"
 import ThemeSwitcher from "./ThemeSwitcher"
 import DesktopNav from "./DesktopNav"
@@ -11,7 +12,18 @@ function Navbar() {
   }
 
   return (
-    <header className='dark:bg-black mx-auto flex w-full max-w-7xl items-center justify-between p-4 lg:px-8 sticky top-0 z-10 backdrop-blur-lg border-b-2 border-white'>
+    <motion.header
+      initial={{
+        y: -50,
+      }}
+      animate={{
+        y: 0,
+      }}
+      transition={{
+        duration: .25
+      }}
+      className='dark:bg-black mx-auto flex w-full max-w-7xl items-center justify-between p-4 lg:px-8 sticky top-0 z-10 backdrop-blur-lg border-b-2 border-white'
+    >
       <div className='lg:flex items-center w-full'>
         <nav className='w-full'>
           <DesktopNav />
@@ -37,7 +49,7 @@ function Navbar() {
           </button>
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
 

@@ -1,8 +1,9 @@
+import { headingAnimation } from "../framer.config"
 import BlockTitle from "./BlockTitle"
 import SocialLinks from "./SocialLinks"
+import { motion } from "framer-motion"
 
 function Contacts() {
-
   function showToast(id) {
     let btn = document.getElementById(id)
     const btnClasess = btn.className
@@ -16,17 +17,33 @@ function Contacts() {
   }
 
   return (
-    <div
+    <motion.div
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ amount: 0.2, once: true }}
       className='px-4 py-10 dark:bg-slate-800 lg:mx-auto lg:max-w-7xl lg:h-74 lg:py-24 lg:px-24 flex flex-col items-center justify-center bg-slate-50'
       id='contact'
     >
       <BlockTitle>Get in touch</BlockTitle>
-      <p className='text-slate-600 text-sm lg:text-lg text-center my-2 lg:w-584 dark:text-white'>
+      <motion.p
+        variants={headingAnimation}
+        custom={1}
+        className='text-slate-600 text-sm lg:text-lg text-center my-2 lg:w-584 dark:text-white'
+      >
         What’s next? Feel free to reach out to me if you're looking for a
         developer, have a query, or simply want to connect.
-      </p>
-      <div className='w-full lg:text-3xl font-bold flex flex-col items-center dark:text-white'>
-        <p className='my-2 lg:my-4 flex items-center justify-center'>
+      </motion.p>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{amount: .2}}
+        className='w-full lg:text-3xl font-bold flex flex-col items-center dark:text-white'
+      >
+        <motion.p
+          variants={headingAnimation}
+          custom={2}
+          className='my-2 lg:my-4 flex items-center justify-center'
+        >
           <i className='bx bx-envelope text-2xl lg:text-4xl mr-4 lg:mr-8 text-slate-600 dark:text-white'></i>
           dev.andrusenko.oleh@gmail.com
           <button
@@ -39,10 +56,14 @@ function Contacts() {
               showToast(e.target.parentNode.id)
             }}
           >
-            <i class='bx bx-copy'></i>
+            <i className='bx bx-copy'></i>
           </button>
-        </p>
-        <p className='my-4 flex items-center justify-center dark:text-white'>
+        </motion.p>
+        <motion.p
+          variants={headingAnimation}
+          custom={3}
+          className='my-4 flex items-center justify-center dark:text-white'
+        >
           <i className='bx bx-phone text-2xl lg:text-4xl mr-4 lg:mr-8 text-slate-600 dark:text-white'></i>
           +380 98 95 72 528
           <button
@@ -53,15 +74,19 @@ function Contacts() {
               showToast(e.target.parentNode.id)
             }}
           >
-            <i class='bx bx-copy'></i>
+            <i className='bx bx-copy'></i>
           </button>
-        </p>
-      </div>
-      <p className='lg:text-lg text-slate-600 my-4 lg:my-10 dark:text-white'>
+        </motion.p>
+      </motion.div>
+      <motion.p
+        variants={headingAnimation}
+        custom={4}
+        className='lg:text-lg text-slate-600 my-4 lg:my-10 dark:text-white'
+      >
         You may also find me on these platforms!
-      </p>
+      </motion.p>
       <SocialLinks />
-    </div>
+    </motion.div>
   )
 }
 

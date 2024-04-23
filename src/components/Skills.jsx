@@ -1,6 +1,7 @@
-import SkillItem from "./SkillItem"
+import { MSkillItem } from "./SkillItem"
 import BlockTitle from "./BlockTitle"
-
+import { titleAnimation, skillsAnimation } from "../framer.config"
+import { motion } from "framer-motion"
 import { IoLogoJavascript, IoLogoReact, IoLogoNodejs } from "react-icons/io5"
 import {
   SiNextdotjs,
@@ -17,35 +18,48 @@ function Skills() {
       id='skills'
     >
       <BlockTitle>Skills</BlockTitle>
-      <p className='text-center text-slate-600 text-xl dark:text-white'>
+      <motion.p
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.25, once: true }}
+        variants={titleAnimation}
+        transition={{ delay: 0.3 }}
+        custom={3}
+        className='text-center text-slate-600 text-xl dark:text-white'
+      >
         The skills, tools and technologies I am using:
-      </p>
-      <div className='w-full grid grid-rows-2 grid-cols-4 py-8 gap-y-12 my-8'>
-        <SkillItem title='JavaScript'>
+      </motion.p>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ amount: 0.3, once: true }}
+        className='w-full grid grid-rows-2 grid-cols-4 py-8 gap-y-12 my-8'
+      >
+        <MSkillItem custom={1} variants={skillsAnimation} title='JavaScript'>
           <IoLogoJavascript />
-        </SkillItem>
-        <SkillItem title='React'>
+        </MSkillItem>
+        <MSkillItem custom={2} variants={skillsAnimation} title='React'>
           <IoLogoReact />
-        </SkillItem>
-        <SkillItem title='Node.js'>
+        </MSkillItem>
+        <MSkillItem custom={3} variants={skillsAnimation} title='Node.js'>
           <IoLogoNodejs />
-        </SkillItem>
-        <SkillItem title='Next.js'>
+        </MSkillItem>
+        <MSkillItem custom={4} variants={skillsAnimation} title='Next.js'>
           <SiNextdotjs />
-        </SkillItem>
-        <SkillItem title='MongoDB'>
+        </MSkillItem>
+        <MSkillItem custom={5} variants={skillsAnimation} title='MongoDB'>
           <SiMongodb />
-        </SkillItem>
-        <SkillItem title='Sass/scss'>
+        </MSkillItem>
+        <MSkillItem custom={6} variants={skillsAnimation} title='Sass/scss'>
           <SiSass />
-        </SkillItem>
-        <SkillItem title='Tailwindcss'>
+        </MSkillItem>
+        <MSkillItem custom={7} variants={skillsAnimation} title='Tailwindcss'>
           <SiTailwindcss />
-        </SkillItem>
-        <SkillItem title='Git'>
+        </MSkillItem>
+        <MSkillItem custom={8} variants={skillsAnimation} title='Git'>
           <SiGit />
-        </SkillItem>
-      </div>
+        </MSkillItem>
+      </motion.div>
     </div>
   )
 }
