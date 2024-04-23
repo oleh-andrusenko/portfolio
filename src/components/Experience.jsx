@@ -7,7 +7,7 @@ function Experience() {
     <motion.div
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.25, once: true }}
+      viewport={{ amount: 0.5, once: true }}
       className='lg:mx-auto lg:max-w-7xl bg-slate-50 lg:py-24 lg:px-20 px-4 py-10 dark:bg-slate-800'
       id='experience'
     >

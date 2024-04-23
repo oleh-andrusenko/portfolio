@@ -20,7 +20,7 @@ function Contacts() {
     <motion.div
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.5, once: true }}
       className='px-4 py-10 dark:bg-slate-800 lg:mx-auto lg:max-w-7xl lg:h-74 lg:py-24 lg:px-24 flex flex-col items-center justify-center bg-slate-50'
       id='contact'
     >
@@ -36,7 +36,7 @@ function Contacts() {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        viewport={{amount: .2}}
+        viewport={{amount: .5}}
         className='w-full lg:text-3xl font-bold flex flex-col items-center dark:text-white'
       >
         <motion.p

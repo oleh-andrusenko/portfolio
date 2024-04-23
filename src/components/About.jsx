@@ -7,7 +7,7 @@ function About() {
     <motion.div
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.3, once: true }}
+      viewport={{ amount: 0.5, once: true }}
       className='w-full lg:mx-auto lg:max-w-7xl lg:h-740 bg-slate-50 lg:py-24 lg:px-20 relative -z-0 dark:bg-slate-800 dark:text-white px-4 py-10'
       id='about'
     >
@@ -48,7 +48,7 @@ function About() {
           <motion.div
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             <ul className='list-disc ml-8'>
               <motion.li custom={1} variants={listAnimation}>Master's degree in Computer Engineering</motion.li>

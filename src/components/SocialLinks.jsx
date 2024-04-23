@@ -6,7 +6,7 @@ function SocialLinks() {
     <motion.div
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.4, once: true }}
+      viewport={{ amount: 0.1, once: true }}
       className='w-20 pt-8 flex gap-2 items-center justify-between '
     >
       <motion.a

@@ -7,7 +7,7 @@ function Projects() {
     <motion.div
       initial='hidden'
       whileInView='visible'
-      viewport={{ amount: 0.3, once: true }}
+      viewport={{ amount: 0.5, once: true }}
       className='lg:mx-auto lg:max-w-7xl lg:h-[640px] lg:py-24 lg:px-20 px-4 py-12'
       id='projects'
     >
@@ -22,7 +22,7 @@ function Projects() {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.3, once: true }}
+        viewport={{ amount: 0.5, once: true }}
         className='grid grid-cols-1 lg:grid-cols-3  gap-4'
       >
         <MProjectItem

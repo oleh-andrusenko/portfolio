@@ -21,7 +21,7 @@ function Skills() {
       <motion.p
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.25, once: true }}
+        viewport={{ amount: 0.5, once: true }}
         variants={titleAnimation}
         transition={{ delay: 0.3 }}
         custom={3}
@@ -32,7 +32,7 @@ function Skills() {
       <motion.div
         initial='hidden'
         whileInView='visible'
-        viewport={{ amount: 0.3, once: true }}
+        viewport={{ amount: 0.5, once: true }}
         className='w-full grid grid-rows-2 grid-cols-4 py-8 gap-y-12 my-8'
       >
         <MSkillItem custom={1} variants={skillsAnimation} title='JavaScript'>
